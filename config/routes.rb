@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  root 'ecard#new'
+  get 'ecard/download/:title' => 'ecard#download'
+  resources :ecard
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

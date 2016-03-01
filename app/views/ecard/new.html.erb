@@ -1,0 +1,18 @@
+<h1>Pagina di generazione delle ecard</h1>
+
+<%= form_for @ecard, url: {action: "create"} do |f| %>
+  
+  <%= f.label :lang %>:
+  <%= f.select :lang, ['English', 'Italian', 'French']%><br /><br />
+
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+  
+  <%= f.label :pre_header %>:
+  <%= f.text_field :pre_header %><br />
+
+  <%= f.label :width %>:
+  <%= f.text_field :width %><br />
+
+  <%= f.submit "Create" %>
+<% end %>
