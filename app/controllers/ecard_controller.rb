@@ -10,12 +10,14 @@ class EcardController < ApplicationController
 	    	params[:ecard][:title], 
 	    	params[:ecard][:pre_header], 
 	    	params[:ecard][:width])
+
+	    data = File.read("config/template/ecard_template.html")
+	    @content = data
+	    @content = @content.gsub("Forward", params[:ecard][:title])
 	end
 
 	def show
-		#@ecard = Ecard.all
-	    data = File.read("config/template/ecard_template.html")
-	    @content = data
+	    
 	end
 
 
