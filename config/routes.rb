@@ -7,8 +7,9 @@ Rails.application.routes.draw do
 
   root 'ecard#new'
   get 'ecard/download/:title' => 'ecard#download'
-  resources :ecard
   
+  resources :ecard
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

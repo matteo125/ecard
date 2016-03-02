@@ -17,7 +17,10 @@ class Ecard
 	end
 
 	def load_template
-		data = YAML.load_file Rails.root.join 'config/template/ecard_template.html'
+		#data = File.load Rails.root.join 'config/template/ecard_template.html'
+		@content = ""
+		file = File.open Rails.root.join ('config/template/ecard_template.html')
+		@content = file.read
 	end
 
 

@@ -13,14 +13,18 @@ class EcardController < ApplicationController
 	end
 
 	def show
-		@ecard = Ecard.all
+		#@ecard = Ecard.all
+	    data = File.read("config/template/ecard_template.html")
+	    @content = data
 	end
 
 
 	def download
 		#I18n.locale = params[:lang]
-		content = "<title>#{params[:title]}</title><body><h1>#{params[:title]}#{params[:lang]}</h1></body>"
-		send_data content, type: "plain/text", filename: "ecard#{params[:lang]}.html"
+		#data = File.load Rails.root.join 'config/template/ecard_template.html'
+
+		#content = "<title>#{params[:title]}</title><body><h1>#{params[:title]}#{params[:lang]}</h1></body>"
+		send_data @content, type: "plain/text", filename: "ecard#{params[:lang]}.html"
 	end
 
 end
