@@ -17,6 +17,7 @@ class EcardController < ApplicationController
 	    	params[:ecard][:link],
 	    	params[:ecard][:alt],
 	    	params[:ecard][:forward])
+
 #SCELTA BRAND
 	    if params[:ecard][:brand] == 'MiuMiu'
 	    	data = File.read("config/template/ecard_template_miumiu.html")
@@ -28,8 +29,11 @@ class EcardController < ApplicationController
 		    @content.gsub!("titolo", params[:ecard][:title])
 
 		    if params[:ecard][:pre_header_sel] == 'No'
-		    @content.gsub!("#pre_header_yes_1", "<!--")
-		    @content.gsub!("#pre_header_yes_2", "-->")
+			    @content.gsub!("#p_h_yes_1", "<!--")
+			    @content.gsub!("#p_h_yes_2", "-->")
+			else
+				@content.gsub!("#p_h_yes_1", "")
+			    @content.gsub!("#p_h_yes_2", "")
 			end
 
 			@content.gsub!("pre_header", params[:ecard][:pre_header])
@@ -38,16 +42,22 @@ class EcardController < ApplicationController
 		    @content.gsub!("#src", params[:ecard][:src])
 
 		    if params[:ecard][:link_sel] == 'No'
-		    @content.gsub!("#link_no_1", "<!--")
-		    @content.gsub!("#link_no_2", "-->")
+			    @content.gsub!("#l_no_1", "<!--")
+			    @content.gsub!("#l_no_2", "-->")
+			else
+				@content.gsub!("#l_no_1", "")
+			    @content.gsub!("#l_no_2", "")
 			end
 
 		    @content.gsub!("link", params[:ecard][:link])
 		    @content.gsub!("#alt", params[:ecard][:alt])
 
 		    if params[:ecard][:forward_sel] == 'No'
-		    @content.gsub!("#forward_no_1", "<!--")
-		    @content.gsub!("#forward_no_2", "-->")
+			    @content.gsub!("#f_no_1", "<!--")
+			    @content.gsub!("#f_no_2", "-->")
+			else
+				@content.gsub!("#f_no_1", "")
+			    @content.gsub!("#f_no_2", "")	
 			end
 
 		    #@content.gsub!("Forward", params[:ecard][:lang])
