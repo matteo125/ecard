@@ -25,6 +25,7 @@ class EcardController < ApplicationController
 	    	data = File.read("config/template/ecard_template_prada.html")
 		end
 
+#DATI
 	    @content = data
 		    @content.gsub!("titolo", params[:ecard][:title])
 
@@ -60,8 +61,29 @@ class EcardController < ApplicationController
 			    @content.gsub!("#f_no_2", "")	
 			end
 
-		    #@content.gsub!("Forward", params[:ecard][:lang])
-		#DOWNLOAD
+#TRADUZIONI
+		require 'yaml'
+		
+#prada
+		if params[:ecard][:brand] == "Prada"
+			translate = YAML.load_file("config/locales/translate_prada.yml")
+			brand = "PRADA"
+		else
+			translate = YAML.load_file("config/locales/translate_miumiu.yml")
+			brand = "MIU MIU"
+		end
+		
+		@content.gsub!("If you have trouble seeing this e-mail please ", translate[params[:ecard][:lang]]["browser_view_1"])
+		@content.gsub!("click here</a> to unsubscribe. <br />", translate[params[:ecard][:lang]]["footer_3"])
+		@content.gsub!("click here", translate[params[:ecard][:lang]]["browser_view_2"])
+		@content.gsub!("To ensure that our communications are safely received in your inbox,<br/>please add ", translate[params[:ecard][:lang]]["footer_1"])
+		@content.gsub!("to your address book.", translate[params[:ecard][:lang]]["footer_1_2"])
+		@content.gsub!("Forward to a friend", translate[params[:ecard][:lang]]["forward"])
+		@content.gsub!("We legitimately collected your e-mail address in circumstances such as in stores or through the web site,<br />when you knowingly provided this information. We make our best effort in order to handle such information<br />in conformity with privacy regulations and in complete safety. Please ", translate[params[:ecard][:lang]]["footer_2"])
+		@content.gsub!("Click here</a> for information related to #{brand} company and legal information.", translate[params[:ecard][:lang]]["legal_informations"])
+
+
+#DOWNLOAD
 		send_data @content, type: "plain/text", filename: "ecard-#{params[:ecard][:brand]}-#{params[:ecard][:lang]}.html"
 	end
 
@@ -71,10 +93,6 @@ class EcardController < ApplicationController
 
 
 	def download
-		#I18n.locale = params[:lang]
-		#data = File.load Rails.root.join 'config/template/ecard_template.html'
-
-		#content = "<title>#{params[:title]}</title><body><h1>#{params[:title]}#{params[:lang]}</h1></body>"
 		send_data @content, type: "plain/text", filename: "ecard#{params[:ecard][:lang]}.html"
 	end
 

@@ -1,0 +1,74 @@
+en:
+  browser_view_1: "If you have trouble seeing this e-mail please "
+  browser_view_2: "click here"
+  footer_1: "To ensure that our communications are safely received in your inbox,<br/>please add "
+  footer_1_2: "to your address book."
+  forward: "Forward to a friend"
+  footer_2: "We legitimately collected your e-mail address in circumstances such as in stores or through the web site,<br />when you knowingly provided this information. We make our best effort in order to handle such information<br />in conformity with privacy regulations and in complete safety. Please "
+  footer_3: " click here</a> to unsubscribe.<br />"
+  legal_informations: "Click here</a> for information related to MIU MIU company and legal information."
+
+it:
+  browser_view_1: "Se hai difficoltà a visualizzare l'e-mail, "
+  browser_view_2: "fai clic qui"
+  footer_1: "Per garantire che le nostre comunicazioni arrivino in sicurezza nella tua casella di posta elettronica, <br/>aggiungi l'indirizzo "
+  footer_1_2: " alla rubrica."
+  forward: "Inoltra a un amico"
+  footer_2: "Abbiamo legittimamente registrato il tuo indirizzo e-mail in circostanze come un'interazione in negozio o attraverso il sito web,<br /> quando ce lo hai fornito consapevolmente. Ci impegniamo al massimo per gestire i tuoi dati in conformità<br /> alle normative sulla privacy e in totale sicurezza. "
+  footer_3: "Fai clic qui</a> per annullare la sottoscrizione.<br />"
+  legal_informations: "Fai clic qui</a> per informazioni legali e relative alla società MIU MIU."
+
+fr:
+  browser_view_1: "Si vous ne parvenez pas à voir ce message, veuillez "
+  browser_view_2: "cliquer ici"
+  footer_1: "Afin d’assurer la bonne réception de nos communications dans votre boîte de réception,<br/>veuillez ajouter "
+  footer_1_2: " à votre carnet d’adresses."
+  forward: "Transférer à un ami"
+  footer_2: "Nous avons obtenu votre adresse électronique de façon légitime lorsque vous nous l’avez fournie sciemment dans l’un<br />de nos magasins ou sur notre site Internet. Nous nous efforçons de préserver la confidentialité et la sécurité de ces informations<br />conformément aux réglementations sur la vie privée. Veuillez "
+  footer_3: "cliquer ici</a> pour vous annuler votre inscription.<br />"
+  legal_informations: "Veuillez cliquer ici</a> pour obtenir des informations sur la société MIU MIU et ses mentions légales."
+
+de:
+  browser_view_1: "Wenn diese E-Mail nicht richtig angezeigt wird, "
+  browser_view_2: "klicken Sie bitte hier."
+  footer_1: "Um sicherzustellen, dass Sie unsere E-Mails in Ihrem Posteingang erhalten, <br>fügen Sie bitte "
+  footer_1_2: " zu Ihrem Adressbuch hinzu."
+  forward: "An einen Freund weiterleiten"
+  footer_2: "Die Erfassung Ihrer E-Mail-Adresse erfolgt rechtmäßig, wenn Sie unsere Stores oder unsere Webseite<br>besuchen und uns wissentlich diese Information zur Verfügung stellen. Wir unternehmen alle Anstrengungen, <br>um den absolut sicheren Umgang mit diesen Angaben in Übereinstimmung mit Datenschutzvorschriften <br>zu gewährleisten."
+  footer_3: "Bitte klicken Sie hier</a>, wenn Sie sich abmelden möchten.<br />"
+  legal_informations: "Klicken Sie hier</a>, wenn Sie Informationen zum Unternehmen PRADA oder rechtliche Informationen suchen."
+
+jp:
+  browser_view_1: "メールが正しく表示されない場合は"
+  browser_view_2: "こちらをクリック</a>してください。"
+  footer_1: "本サイトからのメールを受信いただくために、下記Eメールアドレスを<br>アドレス帳にご登録されることをおすすめいたします。"
+  footer_1_2: ""
+  forward: "このメールを友達に転送する"
+  footer_2: "プラダジャパン及びその関連会社は、個人情報を取得する際には、店頭やウェブサイトにてお客様に<br>プライバシーポリシーにご同意いただいた上で、メールアドレスを含む個人情報を適正かつ公正な手段で取得しております。<br>お客様の個人情報は、個人情報保護法を遵守し、適切に取り扱っております。<br>ニュースレターの配信停止を希望される場合は、"
+  footer_3: "こちらをクリック</a>してください。<br />プラダの企業情報および法律に関する情報については、"
+  legal_informations: "こちらをクリック</a>してください。"
+
+es:
+  browser_view_1: "Si tiene problemas para ver este correo electrónico, "
+  browser_view_2: "haga clic aquí."
+  footer_1: "Para garantizar la segura recepción de nuestras comunicaciones en su bandeja de entrada, <br>añada "
+  footer_1_2: " a su lista de direcciones de correo electrónico."
+  forward: "Reenviar a un amigo"
+  footer_2: "Hemos obtenido legítimamente su dirección de correo electrónico en circunstancias como en tiendas, <br>o a través del sitio web donde proporcionó esta información de forma consciente. Dedicamos<br>nuestros máximos esfuerzos para que dicha información sea tratada de acuerdo con las normativas<br>de privacidad y en completa seguridad."
+  footer_3: "Haga clic aquí</a> para cancelar la suscripción.<br />"
+  legal_informations: "Aquí clic</a> aquí para consultar información relacionada con la empresa PRADA y su información legal."
+
+cn:
+  browser_view_1: "如果您无法查阅该电子邮件，"
+  browser_view_2: "请点击此处"
+  footer_1: "为确保我们的信息能够正确寄送至您的收件箱，请将 "
+  footer_1_2: "添加至您的地址薄。"
+  forward: "转发给好友"
+  footer_2: "我们会在您知情的情况下，通过专卖店或网站等正当方式向您收集电子邮件地址信息。 <br>我们将竭尽全力确保按照隐私法规来处理此类信息，并确保该信息的绝对安全。 <br>如需取消订阅，"
+  footer_3: "请点击此处。</a><br>"
+  legal_informations: "点击此处获取更多</a> PRADA 公司介绍及法律信息。"
+
+
+
+
+
