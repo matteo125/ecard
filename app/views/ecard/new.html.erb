@@ -7,6 +7,9 @@
 
   <%= f.label :title %>:
   <%= f.text_field :title %><br />
+
+  <%= f.label :pre_header_sel %>:
+  <%= f.select :pre_header_sel, ['No', 'Yes']%><br /><br />
   
   <%= f.label :pre_header %>:
   <%= f.text_field :pre_header %><br />
@@ -19,6 +22,9 @@
   
   <%= f.label :src %>:
   <%= f.text_field :src %><br />
+
+  <%= f.label :link_sel %>:
+  <%= f.select :link_sel, ['No', 'Yes']%><br /><br />
   
   <%= f.label :link %>:
   <%= f.text_field :link %><br />
@@ -27,10 +33,10 @@
   <%= f.text_field :width %><br />
 
   <%= f.label :alt %>:
-  <%= f.text_field :alt %><br /> 
-  
-  <%= f.label :forward %>:
-  <%= f.text_field :forward %><br /> 
+  <%= f.text_field :alt %><br />
+
+  <%= f.label :forward_sel %>:
+  <%= f.select :forward_sel, ['No', 'Yes']%><br /><br />
 
   <%= f.submit "Create" %>
 <% end %>

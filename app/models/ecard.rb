@@ -7,24 +7,24 @@ class Ecard
     	false
   	end
 
-	attr_accessor :lang, :title, :pre_header, :width, :height, :src, :link, :alt, :forward
+	attr_accessor :lang, :title, :pre_header, :pre_header_sel, :width, :height, :src, :link, :link_sel, :alt, :forward_sel
 
-	def initialize lang = "", title = "", pre_header = "", width = "", height = "", src = "", link = "", alt = "", forward = ""
+	def initialize lang = "", title = "", pre_header = "", pre_header_sel = "", width = "", height = "", src = "", link = "", link_sel = "", alt = "", forward_sel = ""
     	@lang = lang
     	@title = title
     	@pre_header = pre_header
+      @pre_header_sel = pre_header_sel
     	@width = width
     	@height = height
     	@src = src
     	@link = link
+      @link_sel = link_sel
     	@alt = alt
-    	@forward = forward
+    	@forward_sel = forward_sel
 	end
 
 	def load_template
-		#data = File.load Rails.root.join 'config/template/ecard_template.html'
-		@content = ""
-		#file = File.open Rails.root.join ('config/template/ecard_template.html')
+
 		#@content = file.read
 	end
 

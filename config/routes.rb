@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root 'ecard#new'
-  #get 'ecard/download/:title' => 'ecard#download'
-  get 'ecard/download/:title' => 'ecard#show'
+  get 'ecard/download/:title' => 'ecard#download'
+  post 'ecard/show' => 'ecard#show'
   
   resources :ecard
 

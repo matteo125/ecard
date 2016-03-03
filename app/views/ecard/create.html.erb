@@ -26,3 +26,8 @@
 <p>
 <a href="/ecard/download/<%= @ecard.title %>">DOWNLOAD ECARD</a>
 </p>
+
+<%= form_for @content, url: ecard_show_path, method: :post do |f| %>
+
+  <%= f.submit "show content" %>
+<% end %>
