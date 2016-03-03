@@ -1,42 +1,47 @@
 <h1>Pagina di generazione delle ecard</h1>
-
+<div>
 <%= form_for @ecard, url: {action: "create"} do |f| %>
+<div class "form-for">
+  <%= f.label :brand %>:
+  <%= f.select :brand, ['MiuMiu', 'Prada']%><br /><br />
   
   <%= f.label :lang %>:
   <%= f.select :lang, ['English', 'Italian', 'French']%><br /><br />
 
-  <%= f.label :title %>:
+  <%= f.label :title %>:<br />
   <%= f.text_field :title %><br />
 
-  <%= f.label :pre_header_sel %>:
-  <%= f.select :pre_header_sel, ['No', 'Yes']%><br /><br />
+  <%= f.label :pre_header_sel %>:<br />
+  <%= f.select :pre_header_sel, ['No', 'Yes']%><br />
   
-  <%= f.label :pre_header %>:
+  <%= f.label :pre_header %>:<br />
   <%= f.text_field :pre_header %><br />
 
-  <%= f.label :width %>:
+  <%= f.label :width %>:<br />
   <%= f.text_field :width %><br />
 
-  <%= f.label :height %>:
+  <%= f.label :height %>:<br />
   <%= f.text_field :height %><br />
   
-  <%= f.label :src %>:
+  <%= f.label :src %>:<br />
   <%= f.text_field :src %><br />
 
-  <%= f.label :link_sel %>:
-  <%= f.select :link_sel, ['No', 'Yes']%><br /><br />
+  <%= f.label :link_sel %>:<br />
+  <%= f.select :link_sel, ['No', 'Yes']%><br />
   
-  <%= f.label :link %>:
+  <%= f.label :link %>:<br />
   <%= f.text_field :link %><br />
 
-  <%= f.label :width %>:
+  <%= f.label :width %>:<br />
   <%= f.text_field :width %><br />
 
-  <%= f.label :alt %>:
+  <%= f.label :alt %>:<br />
   <%= f.text_field :alt %><br />
 
   <%= f.label :forward_sel %>:
-  <%= f.select :forward_sel, ['No', 'Yes']%><br /><br />
+  <%= f.select :forward_sel, ['No', 'Yes']%><br />
 
   <%= f.submit "Create" %>
+  </div>
 <% end %>
+</div>

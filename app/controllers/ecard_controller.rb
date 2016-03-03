@@ -6,6 +6,7 @@ class EcardController < ApplicationController
 
 	def create
 	    @ecard = Ecard.new(
+	    	params[:ecard][:brand],
 	    	params[:ecard][:lang],
 	    	params[:ecard][:title], 
 	    	params[:ecard][:pre_header],
@@ -16,8 +17,13 @@ class EcardController < ApplicationController
 	    	params[:ecard][:link],
 	    	params[:ecard][:alt],
 	    	params[:ecard][:forward])
+#SCELTA BRAND
+	    if params[:ecard][:brand] == 'MiuMiu'
+	    	data = File.read("config/template/ecard_template_miumiu.html")
+	    else
+	    	data = File.read("config/template/ecard_template_prada.html")
+		end
 
-	    data = File.read("config/template/ecard_template.html")
 	    @content = data
 		    @content.gsub!("titolo", params[:ecard][:title])
 
@@ -46,7 +52,7 @@ class EcardController < ApplicationController
 
 		    #@content.gsub!("Forward", params[:ecard][:lang])
 		#DOWNLOAD
-		send_data @content, type: "plain/text", filename: "ecard#{params[:ecard][:lang]}.html"
+		send_data @content, type: "plain/text", filename: "ecard-#{params[:ecard][:brand]}-#{params[:ecard][:lang]}.html"
 	end
 
 	def show

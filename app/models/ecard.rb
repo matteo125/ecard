@@ -7,10 +7,11 @@ class Ecard
     	false
   	end
 
-	attr_accessor :lang, :title, :pre_header, :pre_header_sel, :width, :height, :src, :link, :link_sel, :alt, :forward_sel
+	attr_accessor :brand, :lang, :title, :pre_header, :pre_header_sel, :width, :height, :src, :link, :link_sel, :alt, :forward_sel
 
-	def initialize lang = "", title = "", pre_header = "", pre_header_sel = "", width = "", height = "", src = "", link = "", link_sel = "", alt = "", forward_sel = ""
-    	@lang = lang
+	def initialize brand = "", lang = "", title = "", pre_header = "", pre_header_sel = "", width = "", height = "", src = "", link = "", link_sel = "", alt = "", forward_sel = ""
+    	@brand = brand
+      @lang = lang
     	@title = title
     	@pre_header = pre_header
       @pre_header_sel = pre_header_sel
