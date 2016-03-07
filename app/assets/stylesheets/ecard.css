@@ -17,7 +17,7 @@ form {
     padding-bottom: 40px;
 }
     label[for=ecard_Language]{
-        padding-left: 75px;
+        padding-left: 135px;
     }
     label[for=ecard_Pre-header]{
         padding-left: 50px;
@@ -41,7 +41,7 @@ select {
     margin-bottom: 20px;   
 }
 .first-form-select {
-    text-align: center;
+    
 }
 
 
