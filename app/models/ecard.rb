@@ -76,7 +76,7 @@ class Ecard
 
   def sub_translations
     @content.gsub!("If you have trouble seeing this e-mail please ", @translate[@options[:lang]]["browser_view_1"])
-    @content.gsub!("click here</a> to unsubscribe. <br />", @translate[@options[:lang]]["footer_3"])
+    @content.gsub!("click here</a> to unsubscribe.<br />", @translate[@options[:lang]]["footer_3"])
     @content.gsub!("click here", @translate[@options[:lang]]["browser_view_2"])
     @content.gsub!("To ensure that our communications are safely received in your inbox,<br/>please add ", @translate[@options[:lang]]["footer_1"])
     @content.gsub!("to your address book.", @translate[@options[:lang]]["footer_1_2"])

@@ -4,6 +4,7 @@
 
 <%= form_for @ecard, url: {action: "create"} do |f| %>
 <div class="form-div">
+<div class="form-select">
   
   <%= f.label 'Brand' %>:
   <%= f.select :brand, ['MiuMiu', 'Prada']%><br /><br />
@@ -11,14 +12,15 @@
   <%= f.label 'Language' %>:
   <%= f.select :lang, ['en', 'it', 'fr', 'de', 'jp', 'es', 'cn', 'ko']%><br /><br />
 
-  <%= f.label :forward_sel %>:
+  <%= f.label 'Forward to a friend' %>:
   <%= f.select :forward_sel, ['No', 'Yes']%><br />
 
-  <%= f.label 'Vuoi il pre-header?' %>:
+  <%= f.label 'Pre-header' %>:
   <%= f.select :pre_header_sel, ['No', 'Yes']%><br />
 
-  <%= f.label 'Vuoi il link?' %>:
-  <%= f.select :link_sel, ['No', 'Yes']%><br />
+  <%= f.label 'Link img?' %>:
+  <%= f.select :link_sel, ['No', 'Yes']%><br /><br />
+  </div>
 
   <%= f.label :title %>:<br />
   <%= f.text_field :title %><br />

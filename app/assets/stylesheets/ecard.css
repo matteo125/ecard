@@ -21,11 +21,15 @@ form {
 label {
     
 }
+
+.form-select {
+    
+}
 select {
-    width: 30%;
+    width: 10%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: inline;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 12px;

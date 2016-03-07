@@ -44,8 +44,8 @@ jp:
   footer_1: "本サイトからのメールを受信いただくために、下記Eメールアドレスを<br>アドレス帳にご登録されることをおすすめいたします。"
   footer_1_2: ""
   forward: "このメールを友達に転送する"
-  footer_2: "プラダジャパン及びその関連会社は、個人情報を取得する際には、店頭やウェブサイトにてお客様に<br>プライバシーポリシーにご同意いただいた上で、メールアドレスを含む個人情報を適正かつ公正な手段で取得しております。<br>お客様の個人情報は、個人情報保護法を遵守し、適切に取り扱っております。<br>ニュースレターの配信停止を希望される場合は、"
-  footer_3: "こちらをクリック</a>してください。<br />プラダの企業情報および法律に関する情報については、"
+  footer_2: "プラダジャパン及びその関連会社は、個人情報を取得する際には、店頭やウェブサイトにてお客様に<br />プライバシーポリシーにご同意いただいた上で、メールアドレスを含む個人情報を適正かつ公正な手段で取得しております。<br>お客様の個人情報は、個人情報保護法を遵守し、適切に取り扱っております。<br>ニュースレターの配信停止を希望される場合は、<br>"
+  footer_3: "こちらをクリック</a>してください。<br /><br />プラダの企業情報及び法律に関する情報については、"
   legal_informations: "こちらをクリック</a>してください。"
 
 es:
@@ -56,17 +56,27 @@ es:
   forward: "Reenviar a un amigo"
   footer_2: "Hemos obtenido legítimamente su dirección de correo electrónico en circunstancias como en tiendas, <br>o a través del sitio web donde proporcionó esta información de forma consciente. Dedicamos<br>nuestros máximos esfuerzos para que dicha información sea tratada de acuerdo con las normativas<br>de privacidad y en completa seguridad."
   footer_3: "Haga clic aquí</a> para cancelar la suscripción.<br />"
-  legal_informations: "Aquí clic</a> aquí para consultar información relacionada con la empresa PRADA y su información legal."
+  legal_informations: "Aquí clic</a> aquí para consultar información relacionada con la empresa MIU MIU y su información legal."
 
 cn:
   browser_view_1: "如果您无法查阅该电子邮件，"
-  browser_view_2: "请点击此处"
+  browser_view_2: "请点击此处。"
   footer_1: "为确保我们的信息能够正确寄送至您的收件箱，请将 "
   footer_1_2: "添加至您的地址薄。"
   forward: "转发给好友"
-  footer_2: "我们会在您知情的情况下，通过专卖店或网站等正当方式向您收集电子邮件地址信息。 <br>我们将竭尽全力确保按照隐私法规来处理此类信息，并确保该信息的绝对安全。 <br>如需取消订阅，"
+  footer_2: "我们会在您知情的情况下，通过专卖店或网站等正当方式向您收集电子邮件地址信息。 <br>我们将竭尽全力确保按照隐私法规来处理此类信息，<br>并确保该信息的绝对安全。 如需取消订阅，"
   footer_3: "请点击此处。</a><br>"
-  legal_informations: "点击此处获取更多</a> PRADA 公司介绍及法律信息。"
+  legal_informations: "点击此处</a>获取更多 MIU MIU 公司介绍及法律信息。"
+
+ko:
+  browser_view_1: "본 이메일이 잘 보이지 않으면 "
+  browser_view_2: " 여기를 클릭하십시오."
+  footer_1: "정상적인 이메일 수신을 위해 주소록에 "
+  footer_1_2: " 을 추가해 주십시오."
+  forward: "친구에게 전달"
+  footer_2: "귀하의 이메일 주소는 매장 또는 웹 사이트 등에서 귀하의 동의를 얻어 합법적으로 수집된 것입니다.<br>수집한 정보는 개인정보 보호정책에 따라 완벽히 보호할 수 있도록 최선을 다하겠습니다.<br>수신을 거부하려면 "
+  footer_3: "여기를 클릭하십시오.</a><br /><br>MIU MIU 기업 관련 정보 및 법적 정보를 보려면 "
+  legal_informations: "여기를 클릭하십시오. </a>"
 
 
 
