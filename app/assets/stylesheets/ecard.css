@@ -3,13 +3,11 @@ h1 {
     font-style: 
 }
 
-
 .form-div
 {
     width: 90%;
     margin: auto;
 }
-
 
 form {
     margin: auto;
@@ -18,13 +16,16 @@ form {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-label {
-    
-}
+    label[for=ecard_Language]{
+        padding-left: 75px;
+    }
+    label[for=ecard_Pre-header]{
+        padding-left: 50px;
+    }
+    label[for=ecard_Link_img]{
+        padding-left: 50px;
+    }
 
-.form-select {
-    
-}
 select {
     width: 10%;
     padding: 12px 20px;
@@ -34,15 +35,29 @@ select {
     border-radius: 4px;
     font-size: 12px;
 }
+.form-select {
+    padding-bottom: 10px;
+    border-bottom:1px solid #989898;
+    margin-bottom: 20px;   
+}
+.first-form-select {
+    text-align: center;
+}
+
+
 
 input {
 	width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 2px 0 15px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 2px solid #555;
 }
 
 input[type=submit] {

@@ -4,22 +4,24 @@
 
 <%= form_for @ecard, url: {action: "create"} do |f| %>
 <div class="form-div">
-<div class="form-select">
-  
-  <%= f.label 'Brand' %>:
-  <%= f.select :brand, ['MiuMiu', 'Prada']%><br /><br />
-  
-  <%= f.label 'Language' %>:
-  <%= f.select :lang, ['en', 'it', 'fr', 'de', 'jp', 'es', 'cn', 'ko']%><br /><br />
+  <div class="form-select">
+    <div class="first-form-select">
+      <%= f.label 'Brand' %>:
+      <%= f.select :brand, ['MiuMiu', 'Prada']%>
+      
+      <%= f.label 'Language' %>:
+      <%= f.select :lang, ['en', 'it', 'fr', 'de', 'jp', 'es', 'cn', 'ko']%><br />
+    </div>
+   <div class="first-form-select">
+      <%= f.label 'Forward to a friend' %>:
+      <%= f.select :forward_sel, ['No', 'Yes']%>
 
-  <%= f.label 'Forward to a friend' %>:
-  <%= f.select :forward_sel, ['No', 'Yes']%><br />
+      <%= f.label 'Pre-header' %>:
+      <%= f.select :pre_header_sel, ['No', 'Yes']%>
 
-  <%= f.label 'Pre-header' %>:
-  <%= f.select :pre_header_sel, ['No', 'Yes']%><br />
-
-  <%= f.label 'Link img?' %>:
-  <%= f.select :link_sel, ['No', 'Yes']%><br /><br />
+      <%= f.label 'Link_img' %>:
+      <%= f.select :link_sel, ['No', 'Yes']%>
+    </div>
   </div>
 
   <%= f.label :title %>:<br />
