@@ -1,6 +1,5 @@
 it:
   miumiu:
-    hello: "MIUMIU MIUMIU MIU CIAO ITALIANI"
     browser_view_1: "Se hai difficoltà a visualizzare l'e-mail, "
     browser_view_2: "fai clic qui"
     footer_1: "Per garantire che le nostre comunicazioni arrivino in sicurezza nella tua casella di posta elettronica, <br/>aggiungi l'indirizzo "
@@ -10,7 +9,6 @@ it:
     footer_3: "Fai clic qui</a> per annullare la sottoscrizione.<br />"
     legal_informations: "Fai clic qui</a> per informazioni legali e relative alla società MIU MIU."
   prada:
-    hello: "PRADA PRADA PRADA"
     browser_view_1: "Se hai difficoltà a visualizzare l'e-mail, "
     browser_view_2: "fai clic qui"
     footer_1: "Per garantire che le nostre comunicazioni arrivino in sicurezza nella tua casella di posta elettronica, <br/>aggiungi l'indirizzo "

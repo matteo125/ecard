@@ -20,4 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  miumiu:
+    browser_view_1: "If you have trouble seeing this e-mail please "
+    browser_view_2: "click here"
+    footer_1: "To ensure that our communications are safely received in your inbox,<br/>please add "
+    footer_1_2: "to your address book."
+    forward: "Forward to a friend"
+    footer_2: "We legitimately collected your e-mail address in circumstances such as in stores or through the web site,<br />when you knowingly provided this information. We make our best effort in order to handle such information<br />in conformity with privacy regulations and in complete safety. Please "
+    footer_3: " click here</a> to unsubscribe.<br />"
+    legal_informations: "Click here</a> for information related to MIU MIU company and legal information."
+  prada:
+    browser_view_1: "If you have trouble seeing this e-mail please "
+    browser_view_2: "click here"
+    footer_1: "To ensure that our communications are safely received in your inbox,<br/>please add "
+    footer_1_2: "to your address book."
+    forward: "Forward to a friend"
+    footer_2: "We legitimately collected your e-mail address in circumstances such as in stores or through the web site,<br />when you knowingly provided this information. We make our best effort in order to handle such information<br />in conformity with privacy regulations and in complete safety. Please "
+    footer_3: " click here</a> to unsubscribe.<br />"
+    legal_informations: "Click here</a> for information related to PRADA company and legal information."

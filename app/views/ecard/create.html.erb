@@ -34,7 +34,7 @@
                 </tr>
      <tr>
        <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
-       <!-- init:ecovu --><%= I18n.t('browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t('browser_view_2').html_safe %></a><!-- end:ecovu -->
+       <!-- init:ecovu --><%= I18n.t(@ecard.brand_downcase + '.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t(@ecard.brand_downcase + '.browser_view_2').html_safe %></a><!-- end:ecovu -->
        </td>
     </tr>
    <tr>
@@ -66,22 +66,20 @@
 <tr>
        <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
 <br>
-<%= I18n.t('footer_1').html_safe %><a href="mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
-<%= I18n.t('footer_1_2').html_safe %><br>
+<%= I18n.t(@ecard.brand_downcase + '.footer_1').html_safe %><a href="mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
+<%= I18n.t(@ecard.brand_downcase + '.footer_1_2').html_safe %><br>
 
 <% if (@ecard.forward_sel == "Yes") %>
   <%= render partial: "forward", locals:  {forward_sel: "Yes"} %>
 <%= @ecard.forward_sel %>
 <% end %>
-
-<%= I18n.t('hello').html_safe %>
            
 
                     </td>
     </tr>
        <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
 <br />
-<%= I18n.t('footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/3920009639061/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en" ><%= I18n.t('footer_3').html_safe %><br />
+<%= I18n.t(@ecard.brand_downcase + '.footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/3920009639061/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en" ><%= I18n.t(@ecard.brand_downcase + '.footer_3').html_safe %><br />
 
 <a href="http://www.miumiu.com/en/company_info" target="_blank"><%= I18n.t(@ecard.brand_downcase + '.legal_informations').html_safe %>
 

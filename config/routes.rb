@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root 'ecard#new'
-  get 'ecard/download/:title' => 'ecard#download'
-
   post 'ecard/#{params[:ecard][:lang]}' => 'ecard#create'
+
+  get 'ecard/download' => 'ecard#download'
   
   resources :ecard
 
