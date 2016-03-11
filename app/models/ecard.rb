@@ -27,8 +27,8 @@ class Ecard
 	end
   
   def content
-    template = File.read "config/templates/template.html.erb"
-    erb_template = ERB::new template
-    erb_template.result binding
+    template = ERB::new File.read("config/templates/template.html.erb")
+    pre_header_template = ERB::new(File.read("config/templates/_pre_header.html.erb"),0,"","_erbout2").result binding
+    template.result binding
   end
 end
