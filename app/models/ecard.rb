@@ -29,4 +29,10 @@ class Ecard
     #@translate = YAML.load_file("config/locales/translate_#{brand_param}.yml")
     @brand = BRANDS[brand_param.to_sym]
 	end
+  
+  def content
+    template = File.read "config/templates/template.html.erb"
+    erb_template = ERB::new template
+    erb_template.result binding
+  end
 end
