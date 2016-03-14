@@ -16,18 +16,29 @@ form {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-    label[for=ecard_Language]{
-        padding-left: 135px;
+
+.form-select {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding-bottom: 10px;
+    border-bottom:1px solid #989898;
+    margin-bottom: 20px;  
+}
+    .first-form-select_1 {
+        display: table-cell;
     }
-    label[for=ecard_Pre-header]{
-        padding-left: 50px;
+    .first-form-select_2 {
+        display: table-cell;
+        text-align: center;
     }
-    label[for=ecard_Link_img]{
-        padding-left: 50px;
+    .first-form-select_3 {
+        display: table-cell;
+        text-align: right;
     }
 
 select {
-    width: 10%;
+    width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline;
@@ -35,16 +46,6 @@ select {
     border-radius: 4px;
     font-size: 12px;
 }
-.form-select {
-    padding-bottom: 10px;
-    border-bottom:1px solid #989898;
-    margin-bottom: 20px;   
-}
-.first-form-select {
-    
-}
-
-
 
 input {
 	width: 100%;

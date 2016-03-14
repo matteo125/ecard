@@ -10,6 +10,51 @@
   <body>
     <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" >
       <%= pre_header_template %>
+
+      <table border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+          <td width="600" id="maintable"><img style="display: block; margin: 0; padding: 0;" width="1" height="10" src="http://static.contactlab.it/spacer.gif"  border="0" ></td>
+        </tr>
+        <tr>
+          <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
+            <!-- init:ecovu --><%= I18n.t(@brand + '.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t(@brand + '.browser_view_2').html_safe %></a><!-- end:ecovu -->
+          </td>
+        </tr>
+
+        <tr>
+          <td width="600" id="maintable"><img style="display: block; margin: 0; padding: 0;" width="1" height="10" src="http://static.contactlab.it/spacer.gif"  border="0" ></td>
+        </tr>
+        
+        <tr>
+          <td width="600" id="maintable" bgcolor="">
+            <%= link_template %>
+            <img id="img1" style="display: block; margin: 0; padding: 0; width:100%; max-width:<%= @width %>px; max-height:<%= @height %>px;" src="<%= @src %>" border="0" alt="<%= @alt %>">   
+           </a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td width="600" id="maintable"><img style="display: block; margin: 0; padding: 0;" width="1" height="10" src="http://static.contactlab.it/spacer.gif"  border="0" ></td>
+        </tr>
+
+        <tr>
+        <%= social_template %>
+        </tr>
+
+        <tr>
+          <tr>
+            <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
+              <br>
+              <%= forward_template %> 
+            </td>
+          </tr>
+          <%= footer_template %>
+        </tr>
+      </table>
+    
+    </td>
+    </tr>
+
     </table>
   </body>
 </html>

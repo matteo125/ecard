@@ -1,0 +1,13 @@
+<% if (@brand == "miumiu") %>
+	<%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
+    <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
+<% else %>
+	<%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:no-reply@news.prada.com">no-reply@news.prada.com</a>
+    <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
+<% end %>
+
+<% if (@forward_sel == "Yes") %>
+	<br>
+	<a style="font-family: arial; font-size: 10px; line-height: 13px; " href="${taf_url}$&lang=en"><%= I18n.t(@brand + '.forward') %>
+	</a>
+<% end %>

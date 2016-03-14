@@ -5,13 +5,15 @@
 <%= form_for @ecard, url: {action: "create"} do |f| %>
 <div class="form-div">
   <div class="form-select">
-    <div class="first-form-select">
+    <div class="first-form-select_1">
       <%= f.label 'Brand' %>:
-      <%= f.select :brand, ['MiuMiu', 'Prada']%>
-      
+      <%= f.select :brand, ['miumiu', 'prada']%>
+    </div>
+    <div class="first-form-select_2">
       <%= f.label 'Language' %>:
-      <%= f.select :lang, ['en', 'it', 'fr', 'de', 'jp', 'es', 'cn', 'ko']%><br />
- 
+      <%= f.select :lang, ['en', 'it', 'fr', 'de', 'jp', 'es', 'cn', 'ko']%>
+    </div>
+    <div class="first-form-select_3">
       <%= f.label 'Forward to a friend' %>:
       <%= f.select :forward_sel, ['No', 'Yes']%>
     </div>
