@@ -31,4 +31,11 @@ class Ecard
     footer_template = ERB::new(File.read("config/templates/_footer.html.erb"),0,"","_erbout2").result binding
     template.result binding
   end
+
+  def write_on_file
+    path = "public/ecard.html"
+    File.open(path, "w") do |f|
+      f.write content
+    end
+  end
 end

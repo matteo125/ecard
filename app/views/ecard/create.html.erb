@@ -1,1 +1,3 @@
-<%= @ecard.content %>
+<%= render :inline => @ecard.content %>
+
+<%= link_to "Download Ecard", ecard_download_path %>

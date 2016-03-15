@@ -6,6 +6,10 @@ class EcardController < ApplicationController
   def create
     @ecard = Ecard.new(params[:ecard])
     I18n.locale = params[:ecard][:lang] || I18n.default_locale
-    send_data @ecard.content, type: "plain/text", filename: "ecard-#{params[:ecard][:brand]}-#{params[:ecard][:lang]}.html"
+    @ecard.write_on_file
+  end
+
+  def download
+  	send_file("#{Rails.root}/public/ecard.html")
   end
 end
