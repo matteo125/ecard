@@ -27,10 +27,8 @@
         
         <tr>
           <td width="600" id="maintable" bgcolor="">
-            <%= if (@link != "") %>
-            
-            <% else %>
-            <%= link_no_template %>
+<!-- LINK AGGIUNGERE -->
+
           </td>
         </tr>
         
@@ -58,9 +56,6 @@
               <br />
               <%= I18n.t(@brand + '.footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/6820009634733/d/${encoded_user_data}$/k/${form_verification_code}$/lang/@lang/" ><%= I18n.t(@brand + '.footer_3').html_safe %>
               <a href="http://www.miumiu.com/en/company_info" target="_blank"><%= I18n.t(@brand + '.legal_informations').html_safe %>
-              $#subscription_url_base#$/unsubscribe/wfc/6820009634733/d/${encoded_user_data}$/k/${form_verification_code}$/
-
-
             </td>
         </tr>
       </table>
