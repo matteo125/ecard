@@ -27,9 +27,10 @@
         
         <tr>
           <td width="600" id="maintable" bgcolor="">
-            <%= link_template %>
-            <img id="img1" style="display: block; margin: 0; padding: 0; width:100%; max-width:<%= @width %>px; max-height:<%= @height %>px;" src="<%= @src %>" border="0" alt="<%= @alt %>">   
-           </a>
+            <%= if (@link != "") %>
+            
+            <% else %>
+            <%= link_no_template %>
           </td>
         </tr>
         
@@ -38,17 +39,26 @@
         </tr>
 
         <tr>
-        <%= social_template %>
+          <td  width="600" align="center" ><a target="_blank" href="http://www.facebook.com/MiuMiu" ><img src="http://static.contactlab.it/prada/social/icona_facebook.jpg" border="0" style="display:inline; margin: auto;" ></a>
+          <a target="_blank" href="https://twitter.com/MIUMIUofficial" ><img src="http://static.contactlab.it/prada/social/icona_twitter.jpg"  border="0" style="display: inline; margin: auto;"></a>
+          <a target="_blank" href="http://instagram.com/miumiu" ><img src="http://static.contactlab.it/prada/social/icona_instagram.jpg"  border="0" style="display: inline; margin: auto;"></a>
+          <a target="_blank" href="http://www.youtube.com/miumiu" ><img src="http://static.contactlab.it/prada/social/icona_youtube.jpg"  border="0" style="display: inline; margin: auto;"></a></td>
         </tr>
 
         <tr>
           <tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
               <br>
+              <%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
+              <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
               <%= forward_template %> 
             </td>
           </tr>
-          <%= footer_template %>
+            <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
+              <br />
+              <%= I18n.t(@brand + '.footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/3920009639061/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en" ><%= I18n.t(@brand + '.footer_3').html_safe %>
+              <a href="http://www.miumiu.com/en/company_info" target="_blank"><%= I18n.t(@brand + '.legal_informations').html_safe %>
+            </td>
         </tr>
       </table>
     

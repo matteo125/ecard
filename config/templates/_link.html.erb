@@ -1,3 +1,5 @@
 <% if (@link != "") %>
-	<a href="<%= @link %>" target="_blank">
+	        <%= link_template %>
+            <img id="img1" style="display: block; margin: 0; padding: 0; width:100%; max-width:<%= @width %>px; max-height:<%= @height %>px;" src="<%= @src %>" border="0" alt="<%= @alt %>">   
+            </a>
 <% end %>

@@ -22,7 +22,7 @@ class Ecard
 	end
   
   def content
-    template = ERB::new File.read("config/templates/template.html.erb")
+    template = ERB::new File.read("config/templates/template_#{@brand}.html.erb")
     pre_header_template = ERB::new(File.read("config/templates/_pre_header.html.erb")).result binding
     link_template = ERB::new(File.read("config/templates/_link.html.erb")).result binding
     social_template = ERB::new(File.read("config/templates/_social.html.erb")).result binding
