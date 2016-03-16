@@ -2,23 +2,12 @@ class Ecard
   extend ActiveModel::Naming
   include ActiveModel::Conversion
 
+  include ActiveModel::Model
+
   attr_accessor :content, :brand, :brand_downcase, :lang, :forward, :forward_sel, :width, :height, :pre_header_sel, :link_sel, :title, :pre_header, :src, :link, :alt
 
 	def persisted?
   	false
-	end
-
-	def initialize options = {}
-    @title = options[:title]
-    @pre_header = options[:pre_header]
-    @link = options[:link]
-    @src = options[:src]
-    @width = options[:width]
-    @height = options[:height]
-    @alt = options[:alt]
-    @pre_header_sel = options[:pre_header_sel]
-    @forward_sel = options[:forward_sel]
-    @brand = options[:brand]
 	end
   
   def content

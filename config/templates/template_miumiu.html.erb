@@ -49,7 +49,7 @@
               <br>
               <%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
               <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
-              <%= forward_template %> 
+              <%= forward_template if @forward_sel %> 
             </td>
           </tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
