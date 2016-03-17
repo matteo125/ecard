@@ -17,7 +17,7 @@
         </tr>
         <tr>
           <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
-            <!-- init:ecovu --><%= I18n.t(@brand + '.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t(@brand + '.browser_view_2').html_safe %></a><!-- end:ecovu -->
+            <!-- init:ecovu --><%= I18n.t('miumiu.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t('miumiu.browser_view_2').html_safe %></a><!-- end:ecovu -->
           </td>
         </tr>
 
@@ -27,7 +27,8 @@
         
         <tr>
           <td width="600" id="maintable" bgcolor="">
-<!-- LINK AGGIUNGERE -->
+
+          <%= @link.empty? ? no_image_link_template : image_link_template %>
 
           </td>
         </tr>
@@ -47,22 +48,22 @@
           <tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
               <br>
-              <%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
-              <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
-              <%= forward_template if @forward_sel %> 
+              <%= I18n.t('miumiu.footer_1').html_safe %>
+              <a href="mailto:mailto:miumiu@news.miumiu.com">miumiu@news.miumiu.com</a>
+              <%= I18n.t('miumiu.footer_1_2').html_safe %><br>
+              <%= forward_template if forward_to_a_friend? %> 
             </td>
           </tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
               <br />
-              <%= I18n.t(@brand + '.footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/6820009634733/d/${encoded_user_data}$/k/${form_verification_code}$/lang/@lang/" ><%= I18n.t(@brand + '.footer_3').html_safe %>
-              <a href="http://www.miumiu.com/en/company_info" target="_blank"><%= I18n.t(@brand + '.legal_informations').html_safe %>
+              <%= I18n.t('miumiu.footer_2').html_safe %>
+              <a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/6820009634733/d/${encoded_user_data}$/k/${form_verification_code}$/lang/<%= lang %>/" >
+              <%= I18n.t('miumiu.footer_3').html_safe %>
+              <a href="http://www.miumiu.com/en/company_info" target="_blank">
+              <%= I18n.t('miumiu.legal_informations').html_safe %>
             </td>
         </tr>
       </table>
-    
-    </td>
-    </tr>
-
     </table>
   </body>
 </html>

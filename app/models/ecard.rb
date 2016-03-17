@@ -4,7 +4,7 @@ class Ecard
 
   include ActiveModel::Model
 
-  attr_accessor :content, :brand, :brand_downcase, :lang, :forward, :forward_sel, :width, :height, :pre_header_sel, :link_sel, :title, :pre_header, :src, :link, :alt
+  attr_accessor :content, :brand, :lang, :forward_to_a_friend, :width, :height, :title, :pre_header, :src, :link, :alt
 
 	def persisted?
   	false
@@ -13,7 +13,8 @@ class Ecard
   def content
     template = ERB::new File.read("config/templates/template_#{@brand}.html.erb")
     pre_header_template = ERB::new(File.read("config/templates/_pre_header.html.erb")).result binding
-    link_template = ERB::new(File.read("config/templates/_link.html.erb")).result binding
+    image_link_template = ERB::new(File.read("config/templates/_image_link.html.erb")).result binding
+    no_image_link_template = ERB::new(File.read("config/templates/_no_image_link.html.erb")).result binding
     forward_template = ERB::new(File.read("config/templates/_forward.html.erb")).result binding
     template.result binding
   end
@@ -23,5 +24,9 @@ class Ecard
     File.open(path, "w") do |f|
       f.write content
     end
+  end
+
+  def forward_to_a_friend?
+    forward_to_a_friend == "0" ? false : true
   end
 end

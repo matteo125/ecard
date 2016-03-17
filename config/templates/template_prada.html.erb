@@ -17,7 +17,7 @@
         </tr>
         <tr>
           <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
-            <!-- init:ecovu --><%= I18n.t(@brand + '.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t(@brand + '.browser_view_2').html_safe %></a><!-- end:ecovu -->
+            <!-- init:ecovu --><%= I18n.t('prada.browser_view_1').html_safe %><a  style="font-family: arial; font-size: 10px; line-height: 13px;"  href="${online_version_url}$"><%= I18n.t('prada.browser_view_2').html_safe %></a><!-- end:ecovu -->
           </td>
         </tr>
 
@@ -27,9 +27,9 @@
         
         <tr>
           <td width="600" id="maintable" bgcolor="">
-            <%= link_template %>
-            <img id="img1" style="display: block; margin: 0; padding: 0; width:100%; max-width:<%= @width %>px; max-height:<%= @height %>px;" src="<%= @src %>" border="0" alt="<%= @alt %>">   
-           </a>
+           
+            <%= @link.empty? ? no_image_link_template : image_link_template %>  
+           
           </td>
         </tr>
         
@@ -48,22 +48,22 @@
           <tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
               <br>
-              <%= I18n.t(@brand + '.footer_1').html_safe %><a href="mailto:no-reply@news.prada.com">no-reply@news.prada.com</a>
-              <%= I18n.t(@brand + '.footer_1_2').html_safe %><br>
-              <%= forward_template %> 
+              <%= I18n.t('prada.footer_1').html_safe %>
+              <a href="mailto:no-reply@news.prada.com">no-reply@news.prada.com</a>
+              <%= I18n.t('prada.footer_1_2').html_safe %><br>
+              <%= forward_template if forward_to_a_friend? %> 
             </td>
           </tr>
             <td width="600" id="maintable"  style="font-family: arial; font-size: 10px; line-height: 13px; color: #727272" align="center">
               <br />
-              <%= I18n.t(@brand + '.footer_2').html_safe %><a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/6720009639979/d/${encoded_user_data}$/k/${form_verification_code}$/lang/@lang" ><%= I18n.t(@brand + '.footer_3').html_safe %>
-              <a href="http://www.prada.com?url=info.html&cmp=int_ecard" target="_blank"><%= I18n.t(@brand + '.legal_informations').html_safe %>  
+              <%= I18n.t('prada..footer_2').html_safe %>
+              <a href="http://clientsection.contactlab.it/service/unsubscribe/wfc/6720009639979/d/${encoded_user_data}$/k/${form_verification_code}$/lang/<%= lang %>" >
+              <%= I18n.t('prada..footer_3').html_safe %>
+              <a href="http://www.prada.com?url=info.html&cmp=int_ecard" target="_blank">
+              <%= I18n.t('prada..legal_informations').html_safe %>  
             </td>
         </tr>
       </table>
-    
-    </td>
-    </tr>
-
     </table>
   </body>
 </html>
